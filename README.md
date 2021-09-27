@@ -22,7 +22,7 @@ multiple front ends, enhancing decentralization.
 
 ## More information
 
-Visit our [discord](https://discord.gg/xxnC3Zbpc2g) to find out more and join the discussion.
+Visit our [discord](https://discord.gg/rzeTcdNSCh) to find out more and join the discussion.
 
 ## Liquity System Summary
 

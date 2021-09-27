@@ -6,11 +6,8 @@
 Liquity is a decentralized protocol that allows Real Estate holders to obtain liquidity against
 their collateral without paying interest. After locking up ETH as collateral in a smart contract and
 creating an individual position trove - aka "cubit", the user can get instant liquidity by minting LEGT,
-a asset-pegged stablecoin. Each cubit is required to be collateralized at a minimum of 150%. Any
-owner of LEGT can redeem their stablecoins for the underlying collateral at any time. The redemption
-mechanism along with algorithmically adjusted fees guarantee a minimum stablecoin value 1 USD 
-
-🚨 TODO ORACLE ADDITION 🚨  stablecoin peg value to be linked to fluid price movement instead of USD - because want to follow appreciation❗️
+a asset-pegged stablecoin. Each cubit is required to be collateralized at a minimum of 125%. The redemption
+mechanism along with algorithmically adjusted fees guarantee a minimum stablecoin value equal to 1% Assets Market Value (AMV)  
 
 An unprecedented liquidation mechanism based on incentivized stability deposits and a redistribution
 cycle from riskier to safer troves provides stability at a much lower collateral ratio than current

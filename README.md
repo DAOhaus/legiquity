@@ -1,11 +1,11 @@
-# Legiquity: Revenue-generating asset-backed borrowing protocol
+# Legiquity: Asset Backed Borrowing Protocol
 
 ![Tests](https://github.com/liquity/dev/workflows/CI/badge.svg) [![Frontend status](https://img.shields.io/uptimerobot/status/m784948796-056b56fd51c67d682c11bb24?label=Testnet&logo=nginx&logoColor=white)](https://devui.liquity.org) ![uptime](https://img.shields.io/uptimerobot/ratio/7/m784948796-056b56fd51c67d682c11bb24) [![Discord](https://img.shields.io/discord/700620821198143498?label=join%20chat&logo=discord&logoColor=white)](https://discord.gg/2up5U32) [![Docker Pulls](https://img.shields.io/docker/pulls/liquity/dev-frontend?label=dev-frontend%20pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/liquity/dev-frontend)
 
 
 Liquity is a decentralized protocol that allows Real Estate holders to obtain liquidity against
 their collateral without paying interest. After locking up ETH as collateral in a smart contract and
-creating an individual position called a "cubit", the user can get instant liquidity by minting LEGT,
+creating an individual position trove - aka "cubit", the user can get instant liquidity by minting LEGT,
 a asset-pegged stablecoin. Each cubit is required to be collateralized at a minimum of 150%. Any
 owner of LEGT can redeem their stablecoins for the underlying collateral at any time. The redemption
 mechanism along with algorithmically adjusted fees guarantee a minimum stablecoin value 1 USD 
@@ -142,21 +142,21 @@ Visit [liquity.org](https://www.liquity.org) to find out more and join the discu
 
 ## Liquity Overview
 
-Liquity is a collateralized debt platform. Users can lock up Ether, and issue stablecoin tokens (LUSD) to their own Ethereum address, and subsequently transfer those tokens to any other Ethereum address. The individual collateralized debt positions are called Troves.
+Liquity is a collateralized debt platform. Users can lock up Ether, and issue stablecoin tokens (LEGT) to their own Ethereum address, and subsequently transfer those tokens to any other Ethereum address. The individual collateralized debt positions backed by a physical asset are called Cubits.
 
-The stablecoin tokens are economically geared towards maintaining value of 1 LUSD = \$1 USD, due to the following properties:
+The stablecoin tokens are economically geared towards maintaining value of 1 LEGT = %1 of Collective Assets Value, due to the following properties:
 
-1. The system is designed to always be over-collateralized - the dollar value of the locked Ether exceeds the dollar value of the issued stablecoins
+1. The system is designed to always be over-collateralized - the dollar value of the locked Asset exceeds the dollar value of the issued stablecoins
 
-2. The stablecoins are fully redeemable - users can always swap $x worth of LUSD for $x worth of ETH (minus fees), directly with the system.
+2. The stablecoins are actively fully redeemable - users can always swap $x worth of stablecoin for $x worth of LEGT (minus fees), directly with the system.
 
-3. The system algorithmically controls the generation of LUSD through a variable issuance fee.
+3. The system algorithmically controls the generation of LEGT through a variable issuance fee.
 
-After opening a Trove with some Ether, users may issue ("borrow") tokens such that the collateralization ratio of their Trove remains above 110%. A user with $1000 worth of ETH in a Trove can issue up to 909.09 LUSD.
+After opening a Cubit with an NFT pointing to a repository with the underlying assets title, last bill of sale, operating agreement etc... users may issue ("borrow") tokens such that the collateralization ratio of their Cubit remains above 125%. A user with Cubit worth of $1000 of LEGT can issue up to 800 LUSD.
 
-The tokens are freely exchangeable - anyone with an Ethereum address can send or receive LUSD tokens, whether they have an open Trove or not. The tokens are burned upon repayment of a Trove's debt.
+The tokens are freely exchangeable - anyone with an Ethereum address can send or receive LEGT tokens, whether they have an open Cubit or not. The tokens are burned upon repayment of a Cubit's debt.
 
-The Liquity system regularly updates the ETH:USD price via a decentralized data feed. When a Trove falls below a minimum collateralization ratio (MCR) of 110%, it is considered under-collateralized, and is vulnerable to liquidation.
+The Liquity system regularly updates the LEGT:USD price via a decentralized data feed. When a Cubit falls below a minimum collateralization ratio (MCR) of 120%, it is considered under-collateralized, and is vulnerable to liquidation.
 
 ## Liquidation and the Stability Pool
 

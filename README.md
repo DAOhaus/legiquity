@@ -1,12 +1,15 @@
 # Legiquity: Asset Backed Borrowing Protocol
 
-![Tests](https://github.com/liquity/dev/workflows/CI/badge.svg) [![Frontend status](https://img.shields.io/uptimerobot/status/m784948796-056b56fd51c67d682c11bb24?label=Testnet&logo=nginx&logoColor=white)](https://devui.liquity.org) ![uptime](https://img.shields.io/uptimerobot/ratio/7/m784948796-056b56fd51c67d682c11bb24) [![Discord](https://img.shields.io/discord/700620821198143498?label=join%20chat&logo=discord&logoColor=white)](https://discord.gg/2up5U32) [![Docker Pulls](https://img.shields.io/docker/pulls/liquity/dev-frontend?label=dev-frontend%20pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/liquity/dev-frontend)
+![Tests](https://github.com/liquity/dev/workflows/CI/badge.svg) 
+[![Frontend status](https://img.shields.io/uptimerobot/status/m784948796-056b56fd51c67d682c11bb24?label=Testnet&logo=nginx&logoColor=white)](https://devui.liquity.org) 
+![uptime](https://img.shields.io/uptimerobot/ratio/7/m784948796-056b56fd51c67d682c11bb24) 
+[![Docker Pulls](https://img.shields.io/docker/pulls/liquity/dev-frontend?label=dev-frontend%20pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/liquity/dev-frontend)
 
 
-Liquity is a decentralized protocol that allows Real Estate holders to obtain liquidity against
-their collateral without paying interest. After locking up ETH as collateral in a smart contract and
-creating an individual position trove - aka "cubit", the user can get instant liquidity by minting LEGT,
-a asset-pegged stablecoin. Each cubit is required to be collateralized at a minimum of 125%. The redemption
+Legiquity is closely inspired by Liquity as a fork of it's decentralized protocol that allows Real Estate holders to obtain liquidity against
+their collateral without paying interest. After locking up an Asset as collateral in a smart contract and
+creating an individual position trove - aka "cubit", the user can get instant digital equity representation by minting LEGT,
+a asset-pegged stablecoin voting token. Each cubit is required to be collateralized at a minimum of 125%. The redemption
 mechanism along with algorithmically adjusted fees guarantee a minimum stablecoin value equal to 1% Assets Market Value (AMV)  
 
 An unprecedented liquidation mechanism based on incentivized stability deposits and a redistribution
